@@ -35,9 +35,10 @@ def main():
         score = 0
         for c in name:
             score += ord(c) - 64
-        score *= i
+        score *= (i + 1)
         s += score
-    print(score)
+        print(i + 1, name, score)
+    print(s)
 
 if __name__ == "__main__":
     main()
